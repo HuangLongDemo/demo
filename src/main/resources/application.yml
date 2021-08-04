@@ -1,0 +1,15 @@
+server:
+  port: 8091
+
+#jdbc:mysql://... 注意mysql后面还有个冒号：
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+#mapper文件放在resources目录下需要添加这个mybatis的配置，扫描到
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
